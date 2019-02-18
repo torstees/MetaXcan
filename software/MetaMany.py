@@ -122,7 +122,7 @@ arguments --covariance_directory and --covariance_suffix. """)
                         default="data/GWAS")
 
     parser.add_argument("--gwas_file_pattern",
-                        help="Pattern to recognice GWAS files in folders (in case there are extra files and you don't want them selected).",
+                        help="Pattern to recognize GWAS files in folders (in case there are extra files and you don't want them selected).",
                         default=None)
 
     GWASUtilities.add_gwas_arguments_to_parser(parser)
