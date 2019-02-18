@@ -1,3 +1,31 @@
+Version 0.6.9:
+    * Fixed edge case in streamed covriance
+Version 0.6.8:
+    * Introduced and order to the prediction models' loading. This makes MetaXcan's streamed execution more robust.
+Version 0.6.7:
+    * Added streamlined execution option that keeps a low-memory profile at a small increase of running time, to handle large covariances
+    * Debug mode: added command line argument to compute just the firt k genes present in the data
+Version 0.6.6:
+    * Added output of loadings and PC regression coefficients to MultiXcan output
+Version 0.6.5:
+    * Added support for model training genotypes to covariance builder
+Version 0.6.4:
+    * Minor refactoring. Added support for more primitive naming conventions in S-MulTiXcan
+Version 0.6.3:
+    * Reworked additional stats
+Version 0.6.2:
+    * Experimental support for single-snp models and non-rsid snps in models
+Version 0.6.1:
+    * Added logging in SPrediXcan to warn when the covariance matrix is close to singular
+    * Bug fixing: Addressed case when SMultiXcan is used with a subset of the GTEx models
+    * Bug fixes: Addressed edge case when SMulTiXcan is used few models, when a numerical resolution error caused no eigen value to pass the threshold\
+    * Added a model name filter in SMulTiXcan to reduce load time.
+Version 0.6.0:
+    * Initial release of MulTiXcan (multi-tissue predixcan) implementation
+Version 0.5.9:
+    * Addressed edge case when the GWAS has no intersection with the prediciton model (most likely a naming issue)
+Version 0.5.8:
+    * Added --gwas_file to MetaXcan so that a single GWAS file can be used as input (alternative to --gwas_folder and --gwas_file_pattern)
 Version 0.5.7:
     * Now input GWAS p-values that are too small (i.e. numerical resolution doesn't yield a finite zscore) can be thresholded as approximation.
 Version 0.5.6.4:
